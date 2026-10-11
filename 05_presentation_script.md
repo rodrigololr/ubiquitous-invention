@@ -351,7 +351,7 @@ Recomendações gerais de design:
 - **[Clique 2]** *"O modelo treinado roda em segundo plano e responde na hora."*
 - **[Clique 3]** QR code ou link para o repositório no GitHub
 
-**Visual:** captura de tela da interface da Fase 6 (`06_app.py`).
+**Visual:** captura de tela da interface da Fase 6 (`slides/img/interface.png`). A interface também mostra o histograma com o palpite de cada uma das 300 árvores, o que retoma visualmente o conceito de consenso do Slide 15.
 
 **Fala:** "Para fechar, o projeto conta com uma interface interativa. Qualquer pessoa ajusta os próprios hábitos e vê a previsão do modelo em tempo real. Vamos testar ao vivo."
 
@@ -383,7 +383,7 @@ Recomendações gerais de design:
 | 24 | `figures/04_simulacao_cenarios.png` | Completo |
 | 25 | `figures/04_mdi_vs_ruido.png` | Completo |
 | 26 | `figures/03_comparacao_baselines.png` | Painel esquerdo |
-| 29 | Captura de tela da interface (Fase 6) | Gerar após a Fase 6 |
+| 29 | `slides/img/interface.png` | Captura de tela da interface (Fase 6) |
 
 Figuras extras para perguntas da plateia: `01_redes_sociais_vs_produtividade.png`, `01_dose_resposta.png`, `01_matriz_correlacao.png`, `03_vies_por_faixa.png`, `04_importancia_por_tema.png`.
 

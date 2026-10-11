@@ -484,12 +484,13 @@ Se fosse para levar só quatro coisas desta apresentação, seriam essas.
 
 ---
 
-<!-- _class: destaque -->
+![bg right:58% contain](slides/img/interface.png)
 
 # Qual seria a SUA produtividade?
 
-* O projeto conta com uma **interface interativa** feita com Gradio
-* Sliders e menus para os seus hábitos; o modelo treinado responde **na hora**
+* Uma **interface interativa** feita com Gradio
+* Sliders e menus para os seus hábitos
+* O modelo responde **na hora** e mostra o palpite de **cada uma das 300 árvores**
 * **Demonstração ao vivo**
 
 <!--
