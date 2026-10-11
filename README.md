@@ -1,6 +1,6 @@
 # Redes Sociais vs Produtividade — Aprendizado de Máquina com Random Forest
 
-> Projeto acadêmico da disciplina **"Aprendizado de Máquina via Algoritmo Random Forest"**.
+> Projeto acadêmico da disciplina Inteligência Artificial. TEMA: **"Aprendizado de Máquina via Algoritmo Random Forest"**.
 > Investigamos como hábitos digitais (tempo em redes sociais, notificações, uso de celular antes de dormir etc.) se relacionam com a **produtividade real** das pessoas, e entregamos um modelo preditivo acessível por uma interface web interativa.
 
 ---
