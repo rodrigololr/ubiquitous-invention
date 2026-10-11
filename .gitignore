@@ -4,3 +4,5 @@ __pycache__/
 .gradio/
 data/
 models/
+apresentacao.html
+apresentacao.pdf

@@ -66,12 +66,14 @@ O dataset contém **valores nulos** em algumas colunas numéricas, que são trat
 ├── 02_model_training.ipynb            # Fase 2 — Split treino/teste + treino do Random Forest
 ├── 03_evaluation.ipynb                # Fase 3 — Métricas e gráficos de desempenho
 ├── 04_insights.ipynb                  # Fase 4 — Feature Importance + análise dos achados
-├── 05_presentation_script.md          # Fase 5 — Roteiro dos slides da apresentação
+├── 05_slides.md                       # Fase 5 — Slides da apresentação (Marp)
+├── 05_presentation_script.md          # Fase 5 — Roteiro detalhado com as falas de cada slide
 ├── 06_app.py                          # Fase 6 — Interface interativa com Gradio
 │
 ├── data/                              # (gerado) Dados processados pela Fase 1
 ├── models/                            # (gerado) Modelo treinado serializado (joblib)
-└── figures/                           # (gerado) Gráficos exportados para os slides
+├── figures/                           # (gerado) Gráficos exportados para os slides
+└── slides/                            # Diagramas didáticos dos slides (diagramas.py gera slides/img/)
 ```
 
 | Arquivo | O que faz |
@@ -80,7 +82,9 @@ O dataset contém **valores nulos** em algumas colunas numéricas, que são trat
 | `02_model_training.ipynb` | Lê os dados processados, separa treino/teste, instancia e treina o `RandomForestRegressor` com hiperparâmetros iniciais e salva o modelo em `models/`. |
 | `03_evaluation.ipynb` | Carrega o modelo, gera previsões no conjunto de teste e calcula métricas (RMSE, MAE, R²), com gráficos de desempenho. |
 | `04_insights.ipynb` | Extrai e plota a *Feature Importance* e discute, em profundidade, o que o modelo revelou sobre redes sociais e produtividade. |
-| `05_presentation_script.md` | Roteiro sequencial ("clique para aparecer") dos slides: IA → ML → Random Forest → Projeto → Descobertas → Encerramento. |
+| `05_slides.md` | Apresentação em [Marp](https://marp.app/) com lógica "clique para aparecer": IA → ML → Random Forest → Projeto → Descobertas → Encerramento. As falas ficam nas notas do apresentador. |
+| `05_presentation_script.md` | Roteiro detalhado de cada slide: o que aparece a cada clique, a fala sugerida, o checklist de figuras e as perguntas prováveis da plateia. |
+| `slides/diagramas.py` | Gera os diagramas didáticos (árvore de decisão, bootstrap, consenso etc.) usados nos slides. |
 | `06_app.py` | Aplicação Gradio que recebe os hábitos do usuário (sliders e dropdowns) e prevê sua produtividade em tempo real com o modelo treinado. |
 
 > Os diretórios `data/`, `models/` e `figures/` são criados automaticamente durante a execução dos notebooks.
@@ -202,6 +206,25 @@ uv run python 06_app.py
 
 Acesse o endereço exibido no terminal (por padrão `http://127.0.0.1:7860`). A interface também pode ser executada dentro de uma célula de notebook com `%run 06_app.py`.
 
+### 6. Abrir e apresentar os slides
+
+Os slides ficam em `05_slides.md` e usam o [Marp](https://marp.app/), que transforma Markdown em apresentação.
+
+1. No VS Code, instale a extensão **Marp for VS Code** (`marp-team.marp-vscode`). O repositório já a recomenda ao ser aberto.
+2. Abra `05_slides.md` e clique no ícone de pré-visualização (canto superior direito) para ver os slides.
+3. Para **apresentar com os cliques**, exporte para HTML: `Ctrl+Shift+P` → **Marp: Export Slide Deck...** → formato **HTML**. Abra o arquivo no navegador e avance com as setas ou a barra de espaço. Os tópicos aparecem um por vez, e o modo apresentador (tecla `P` ou o ícone na barra inferior) mostra as falas.
+
+> A pré-visualização do VS Code mostra todos os tópicos de uma vez: o efeito "clique para aparecer" funciona no HTML exportado. A exportação para **PDF** serve para entregar ou imprimir. Na exportação para **PPTX** os slides viram imagens, sem animações.
+
+Pelo terminal (requer Node.js), sem o VS Code:
+
+```bash
+npx @marp-team/marp-cli 05_slides.md --allow-local-files -o apresentacao.html   # apresentação com cliques
+npx @marp-team/marp-cli 05_slides.md --allow-local-files -o apresentacao.pdf    # PDF
+```
+
+Os diagramas didáticos são gerados com `uv run python slides/diagramas.py`.
+
 ---
 
 ## Fases do Projeto
@@ -213,7 +236,7 @@ Acesse o endereço exibido no terminal (por padrão `http://127.0.0.1:7860`). A 
 | 2 | `02_model_training.ipynb` | `feat: implementa treinamento do Random Forest` |
 | 3 | `03_evaluation.ipynb` | `feat: adiciona métricas e gráficos de avaliação do modelo` |
 | 4 | `04_insights.ipynb` | `feat: extrai insights de importância das variáveis` |
-| 5 | `05_presentation_script.md` | `docs: adiciona roteiro dos slides da apresentação` |
+| 5 | `05_slides.md` + `05_presentation_script.md` | `docs: adiciona roteiro dos slides da apresentação` |
 | 6 | `06_app.py` | `feat: cria interface web interativa com Gradio` |
 
 ---
