@@ -84,7 +84,7 @@ O dataset contém **valores nulos** em algumas colunas numéricas, que são trat
 | `03_evaluation.ipynb` | Carrega o modelo, gera previsões no conjunto de teste e calcula métricas (RMSE, MAE, R²), com gráficos de desempenho. |
 | `04_insights.ipynb` | Extrai e plota a *Feature Importance* e discute, em profundidade, o que o modelo revelou sobre redes sociais e produtividade. |
 | `05_slides.md` | Apresentação em [Marp](https://marp.app/) com lógica "clique para aparecer": IA → ML → Random Forest → Projeto → Descobertas → Encerramento. As falas ficam nas notas do apresentador. |
-| `05_presentation_script.md` | Roteiro detalhado de cada slide: o que aparece a cada clique, a fala sugerida, o checklist de figuras e as perguntas prováveis da plateia. |
+| `05_presentation_script.md` | Roteiro da apresentação alinhado aos 39 slides: quem fala, tempo, o que aparece a cada clique, a fala sugerida, o roteiro da demonstração e as perguntas prováveis da plateia. |
 | `slides/diagramas.py` | Gera os diagramas didáticos (árvore de decisão, bootstrap, consenso etc.) usados nos slides. |
 | `06_app.py` | Aplicação Gradio que recebe os hábitos do usuário (sliders e dropdowns) e prevê sua produtividade em tempo real com o modelo treinado. |
 
