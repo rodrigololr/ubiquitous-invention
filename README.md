@@ -13,7 +13,8 @@
 4. [Pipeline de Dados](#pipeline-de-dados)
 5. [Como Executar](#como-executar)
 6. [Fases do Projeto](#fases-do-projeto)
-7. [Tecnologias](#tecnologias)
+7. [Autores](#autores)
+8. [Tecnologias](#tecnologias)
 
 ---
 
@@ -238,6 +239,15 @@ Os diagramas didáticos são gerados com `uv run python slides/diagramas.py`.
 | 4 | `04_insights.ipynb` | `feat: extrai insights de importância das variáveis` |
 | 5 | `05_slides.md` + `05_presentation_script.md` | `docs: adiciona roteiro dos slides da apresentação` |
 | 6 | `06_app.py` | `feat: cria interface web interativa com Gradio` |
+
+---
+
+## Autores
+
+| Aluno | Matrícula |
+|---|---|
+| Antônio Rodrigo Lima de Andrade Tenório | 23210707 |
+| Bruno Gomes de Barros Filho | 21111360 |
 
 ---
 

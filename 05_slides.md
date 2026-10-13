@@ -54,7 +54,10 @@ style: |
 ## Estudo de caso: redes sociais derrubam a nossa produtividade?
 
 *Disciplina: Inteligência Artificial*
-*Integrantes: [nomes do grupo]*
+
+**Alunos**
+Antônio Rodrigo Lima de Andrade Tenório (23210707)
+Bruno Gomes de Barros Filho (21111360)
 
 <!--
 Hoje vamos mostrar como uma máquina aprende com dados usando um algoritmo chamado Random Forest. E vamos usar uma pergunta que todo mundo aqui já se fez: será que o tempo nas redes sociais está acabando com a nossa produtividade?
@@ -512,5 +515,7 @@ Roteiro da demonstração:
 ## Perguntas?
 
 *Random Forest: muitas árvores diferentes, uma decisão melhor.*
+
+Antônio Rodrigo Lima de Andrade Tenório · Bruno Gomes de Barros Filho
 
 Repositório: github.com/rodrigololr/ubiquitous-invention
